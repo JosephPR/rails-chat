@@ -1,4 +1,6 @@
 <h1>
 Editing room <%= @room.name %>
 </h1>
+
 <%= render partial: 'form' %>
+    <%= link_to 'Destroy', room_path, class: 'btn btn-danger', method: :delete, data: { confirm: 'Are you sure?' } %>
